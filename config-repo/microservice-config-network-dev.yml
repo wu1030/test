@@ -10,8 +10,8 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     database: MYSQL
-    show-sql: false
+    show-sql: true
 message:
   http:
-    url: http://ip:9091/get/user/3
+    url: http://ip:9091/get/user/4
     
