@@ -11,3 +11,7 @@ spring:
   jpa:
     database: MYSQL
     show-sql: true
+message:
+  http:
+    url: http://ip:9091/get/user/1
+    
