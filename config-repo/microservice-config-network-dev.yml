@@ -13,5 +13,5 @@ spring:
     show-sql: true
 message:
   http:
-    url: http://ip:9091/get/user/2
+    url: http://ip:9091/get/user/3
     
