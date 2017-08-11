@@ -1,0 +1,13 @@
+server:
+  port: 8051
+spring:
+  application:
+    name: network
+  datasource:
+    url: jdbc:mysql://192.168.12.12:3306/ct_appmarket?useUnicode=true&amp;characterEncoding=UTF-8
+    username: ky
+    password: ky_2017
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: MYSQL
+    show-sql: true
