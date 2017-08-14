@@ -26,7 +26,7 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     filters: stat,wall,log4j
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-    useGlobalDataSourceStat: true
+#    useGlobalDataSourceStat: true
   jpa:
     database: MYSQL
     show-sql: true
