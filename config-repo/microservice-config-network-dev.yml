@@ -4,11 +4,11 @@ spring:
   application:
     name: provider-network
   datasource:
-    #type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://192.168.12.12:3306/ct_appmarket?useUnicode=true&amp;characterEncoding=UTF-8
     username: ky
     password: ky_2017
     driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
     minIdle: 5
     maxActive: 20
