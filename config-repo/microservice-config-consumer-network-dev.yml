@@ -1,9 +1,9 @@
 server:
-  port: 8011
+  port: 8052
 logging:
   config: classpath:config/logs/logback-spring.xml
 spring:
-  application:
+  application: 
     name: consumer-network
 eureka:
   client:
