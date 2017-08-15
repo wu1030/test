@@ -4,7 +4,7 @@ logging:
   config: classpath:config/logs/logback-spring.xml
 spring:
   application:
-    name: consumer-network-with-ribbon-hystrix
+    name: consumer-network
 eureka:
   client:
     serviceUrl:
