@@ -8,8 +8,6 @@ spring:
     username: ky
     password: ky_2017
     driver-class-name: com.mysql.jdbc.Driver
-    #platform: mysql
-    #type: com.alibaba.druid.pool.DruidDataSource
     # 下面为连接池的补充设置，应用到上面所有数据源中
     # 初始化大小，最小，最大
     initialSize: 1
@@ -42,6 +40,18 @@ spring:
       port: 5672
       username: admin
       password: birdgame2015
+#自定义Druid监控参数
+druid:
+  monitor:
+    loginUsername: wu
+    loginPassword: 123
+    #禁用HTML页面上的“Reset All”功能
+    resetEnable: false
+    #IP白名单 (没有配置或者为空，则允许所有访问)
+    allow: 
+    #IP黑名单 (存在共同时，deny优先于allow)
+    deny: 
+#自定义测试参数
 message:
   http:
     url: http://ip:9091/get/user/5-1
