@@ -6,13 +6,13 @@ spring:
   application: 
     name: consumer-network
   rabbitmq:
-      host: 192.168.12.16
-      port: 5672
-      username: admin
-      password: birdgame2015
+    host: 192.168.12.16
+    port: 5672
+    username: admin
+    password: birdgame2015
 eureka:
   client:
     serviceUrl:
       defaultZone: http://192.168.12.12:8011/eureka/,http://192.168.12.14:8012/eureka/,http://192.168.12.16:8013/eureka/
-  instance:
-    hostname: ribbon          # 此处，preferIpAddress不设置或者设为false，不能设为true，否则影响turbine的测试。turbine存在的问题：eureka.instance.hostname一致时只能检测到一个节点，会造成turbine数据不完整
+  #instance:
+    #hostname: ribbon          # 此处，preferIpAddress不设置或者设为false，不能设为true，否则影响turbine的测试。turbine存在的问题：eureka.instance.hostname一致时只能检测到一个节点，会造成turbine数据不完整

@@ -38,10 +38,10 @@ spring:
     database: MYSQL
     show-sql: true
   rabbitmq:
-      host: 192.168.12.16
-      port: 5672
-      username: admin
-      password: birdgame2015
+    host: 192.168.12.16
+    port: 5672
+    username: admin
+    password: birdgame2015
 #自定义Druid监控参数
 druid:
   monitor:
