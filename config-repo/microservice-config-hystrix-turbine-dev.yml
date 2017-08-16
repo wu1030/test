@@ -4,7 +4,7 @@ logging:
   config: classpath:config/logs/logback-spring.xml
 spring:
   application:
-    name: microservice-hystrix-turbine
+    name: monitor-hystrix-turbine
   rabbitmq:
     host: 192.168.12.16
     port: 5672
