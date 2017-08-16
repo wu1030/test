@@ -1,3 +1,7 @@
+server:
+  port: 8031
+logging:
+  config: classpath:config/logs/logback-spring.xml
 spring:
   application:
     name: microservice-hystrix-turbine
@@ -6,11 +10,6 @@ spring:
     port: 5672
     username: admin
     password: birdgame2015
-logging:
-  config: classpath:config/logs/logback-spring.xml
-server:
-  port: 8031
-security.basic.enabled: false
 turbine:
   aggregator:
     clusterConfig: default   # 指定聚合哪些集群，多个使用","分割，默认为default。可使用http://.../turbine.stream?cluster={clusterConfig之一}访问
