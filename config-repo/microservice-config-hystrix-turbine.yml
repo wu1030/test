@@ -1,5 +1,10 @@
 spring:
   application.name: microservice-hystrix-turbine
+  rabbitmq:
+    host: 192.168.12.16
+    port: 5672
+    username: admin
+    password: birdgame2015
 logging:
   config: classpath:config/logs/logback-spring.xml
 server:
