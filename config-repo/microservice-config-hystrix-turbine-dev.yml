@@ -6,10 +6,10 @@ spring:
   application:
     name: microservice-hystrix-turbine
   rabbitmq:
-    host: 192.168.12.16
-    port: 5672
-    username: admin
-    password: birdgame2015
+      host: 192.168.12.16
+      port: 5672
+      username: admin
+      password: birdgame2015
 turbine:
   aggregator:
     clusterConfig: default   # 指定聚合哪些集群，多个使用","分割，默认为default。可使用http://.../turbine.stream?cluster={clusterConfig之一}访问
