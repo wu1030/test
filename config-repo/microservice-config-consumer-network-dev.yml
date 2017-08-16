@@ -6,10 +6,10 @@ spring:
   application: 
     name: consumer-network
   rabbitmq:
-      host: 192.168.12.16
-      port: 5672
-      username: admin
-      password: birdgame2015
+     host: 192.168.12.16
+     port: 5672
+     username: admin
+     password: birdgame2015
 eureka:
   client:
     serviceUrl:
