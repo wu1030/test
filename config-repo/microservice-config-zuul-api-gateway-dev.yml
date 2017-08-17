@@ -20,9 +20,6 @@ zuul:
     movie:                                                            # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
       path: /network/**                                                 # 想要映射到的路径
       service-id: CONSUMER-NETWORK     # Eureka中的serviceId
-    host:
-        connect-timeout-millis: 10000
-        socket-timeout-millis: 20000
 #自定义配置
 zuulFilters:
   paramterFilter:
