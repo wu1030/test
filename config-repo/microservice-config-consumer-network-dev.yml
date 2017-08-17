@@ -10,6 +10,16 @@ spring:
     port: 5672
     username: admin
     password: birdgame2015
+hystrix:
+  threadpool:
+    default:
+      coreSize: 500 #缺省为10
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000 #缺省为1000  
 eureka:
   client:
     serviceUrl:
