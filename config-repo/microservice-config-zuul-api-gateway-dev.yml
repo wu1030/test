@@ -2,7 +2,7 @@ server:
   port: 8090
 spring:
   application:
-    name: microservice-zuul-api-gateway
+    name: zuul-api-gateway
   rabbitmq:
     host: 192.168.12.16
     port: 5672
@@ -20,3 +20,7 @@ zuul:
     movie:                                                            # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
       path: /network/**                                                 # 想要映射到的路径
       service-id: CONSUMER-NETWORK     # Eureka中的serviceId
+#自定义配置
+zuulFilters:
+  paramterFilter:
+    shouldFilter: true
