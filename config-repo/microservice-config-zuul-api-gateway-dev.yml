@@ -1,5 +1,8 @@
 server:
   port: 8090
+  tomcat:
+    max-threads: 128 # Maximum amount of worker threads.
+    min-spare-threads: 64 # Minimum amount of worker threads.
 spring:
   application:
     name: zuul-api-gateway
@@ -24,3 +27,13 @@ zuul:
 zuulFilters:
   paramterFilter:
     shouldFilter: false
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000 #用来设置thread和semaphore两种隔离策略的超时时间，默认值是1000。
+ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 2000
