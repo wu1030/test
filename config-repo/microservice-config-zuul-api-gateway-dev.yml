@@ -23,4 +23,4 @@ zuul:
 #自定义配置
 zuulFilters:
   paramterFilter:
-    shouldFilter: true
+    shouldFilter: false
