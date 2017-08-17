@@ -1,0 +1,22 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: microservice-zuul-api-gateway
+  rabbitmq:
+    host: 192.168.12.16
+    port: 5672
+    username: admin
+    password: birdgame2015
+logging:
+  config: classpath:config/logs/logback-spring.xml
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.12.12:8011/eureka/,http://192.168.12.14:8012/eureka/,http://192.168.12.16:8013/eureka/
+zuul:
+  #ignored-services: COMPUTE-SERVICE                        # 需要忽视的服务(配置后将不会被路由)
+  routes:
+    movie:                                                            # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
+      path: /network/**                                                 # 想要映射到的路径
+      service-id: CONSUMER-NETWORK     # Eureka中的serviceId
