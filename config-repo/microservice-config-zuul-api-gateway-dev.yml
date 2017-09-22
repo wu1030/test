@@ -16,7 +16,7 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.12.12:8011/eureka/,http://192.168.12.14:8012/eureka/,http://192.168.12.16:8013/eureka/
+      defaultZone: http://192.168.12.12:8011/eureka/,http://192.168.12.14:8011/eureka/,http://192.168.12.16:8011/eureka/
 zuul:
   #ignored-services: COMPUTE-SERVICE                        # 需要忽视的服务(配置后将不会被路由)
   routes:

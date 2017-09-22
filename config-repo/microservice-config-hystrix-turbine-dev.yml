@@ -24,7 +24,7 @@ turbine:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.12.12:8011/eureka/,http://192.168.12.14:8012/eureka/,http://192.168.12.16:8013/eureka/
+      defaultZone: http://192.168.12.12:8011/eureka/,http://192.168.12.14:8011/eureka/,http://192.168.12.16:8011/eureka/
       
       
 ### 参考：http://blog.csdn.net/liaokailin/article/details/51344281
